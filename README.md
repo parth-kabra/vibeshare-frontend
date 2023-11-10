@@ -26,7 +26,7 @@ The backend of VibeShare is implemented using Flask for handling data and busine
 ## Screenshots
 
 ### Homepage
-![Homepage](./src/img/screenshots/homepage.png)
+![Homepage](./src/img/screenshots/homepage.PNG)
 
 ### Vibe Creation
 ![Vibe Creation](./src/img/screenshots/create-vibe.png)
