@@ -10,7 +10,7 @@ export default function Posts() {
     }, []);
 
     useEffect(() => {
-        const interval = setInterval(() => {
+        if(!posts.length){
             fetch(
                 "https://chat-app-backend-parthkabra.vercel.app/api/get-posts"
             )
@@ -21,10 +21,8 @@ export default function Posts() {
                         setPosts(data.posts);
                     }
                 });
-        }, 1000);
-
-        return () => clearInterval(interval);
-    }, []);
+        }
+    });
 
     let allposts = [];
     for (let i in posts) {
